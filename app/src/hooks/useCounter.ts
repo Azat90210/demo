@@ -1,19 +1,19 @@
 // src/hooks/useCounter.ts
-import { useDispatch, useSelector } from 'react-redux';
-import { increment, decrement } from '../store';
-import { RootState } from '../store';
+import { useDispatch, useSelector } from 'react-redux'
+import { increment, decrement } from '../store'
+import { RootState } from '../store'
 
 export const useCounter = () => {
-  const dispatch = useDispatch();
-  const count = useSelector((state: RootState) => state.counter.value);
+  const dispatch = useDispatch()
+  const count = useSelector((state: RootState) => state.counter.value)
 
   const incrementCounter = () => {
-    dispatch(increment());
-  };
+    dispatch(increment())
+  }
 
   const decrementCounter = () => {
-    dispatch(decrement());
-  };
+    dispatch(decrement())
+  }
 
-  return { count, incrementCounter, decrementCounter };
-};
+  return { count, incrementCounter, decrementCounter }
+}

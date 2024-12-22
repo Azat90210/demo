@@ -1,7 +1,9 @@
 module.exports = {
-  semi: true, // добавлять точку с запятой в конце строк
-  singleQuote: true, // использовать одинарные кавычки вместо двойных
-  trailingComma: 'es5', // добавлять запятую после последнего элемента в объектах и массивах
-  tabWidth: 2, // количество пробелов для отступов
-  useTabs: false, // использовать пробелы вместо табуляции
-};
+  semi: false,
+  singleQuote: true,
+  printWidth: 100,
+  trailingComma: 'es5',
+  tabWidth: 2,
+  useTabs: false,
+  bracketSpacing: true,
+}
