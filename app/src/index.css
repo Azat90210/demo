@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .text-primary {
+    @apply text-[#131314] font-semibold text-[6.25rem] leading-[6.5rem];
+  }
+
+  .text-secondary {
+    @apply text-base font-medium text-[#131314CC] text-opacity-80 text-center leading-9;
+  }
+
+  .text-default {
+    @apply flex items-center whitespace-nowrap px-6 justify-center bg-[#008ff4] text-white text-[1.6rem] font-extrabold h-[4.2rem] rounded-[0.6rem];
+  }
+
+  /* .primary-button1 {
+    @apply flex items-center whitespace-nowrap px-6 justify-center bg-[#008FF4] text-white text-[1.6rem] font-extrabold h-[4.2rem] rounded-[0.6rem];
+  }
+
+  .section-heading {
+    @apply w-full text-center text-2xl uppercase tracking-wider text-white;
+  }
+
+  .default-card {
+    @apply bg-gradient-to-b from-[#9DDBFE] to-[#49B3FD] shadow-[0px_5px_5px_1px_#1393FFBF,inset_0px_0px_8px_0px_#d4eeff]  rounded-[2rem] drop-shadow-2xl;
+  } */
+}

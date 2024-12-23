@@ -1,45 +1,50 @@
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from '@nextui-org/react'
-import { LogoIcon } from '../../../../assets/icons/LogoIcon'
+import { LogoIcon } from '@/assets/icons/LogoIcon'
+import { SearchIcon } from '@/assets/icons/SearchIcon'
+
+interface HeaderProps {
+  className?: string
+}
 
 
-export const Header: React.FC = () => {
+export const Header: React.FC<HeaderProps> = () => {
   return (
-    <Navbar className='w-full justify-between'>
+    <Navbar className='w-full justify-between items-center my-12 px-24'>
       <NavbarBrand>
-        <LogoIcon width={50} height={50} />
+        <LogoIcon />
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-10" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link className='text-secondary' href="#">
 						Главная
           </Link>
         </NavbarItem>
 				<NavbarItem>
-          <Link color="foreground" href="#">
+          <Link className='text-secondary' href="#">
 						Продукты
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link aria-current="page" href="#">
+          <Link  className='text-secondary' href="#">
 						Для бизнеса
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link className='text-secondary' href="#">
 						Блог
           </Link>
         </NavbarItem>
       </NavbarContent>
-      <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem>
-				<NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem>
+      <NavbarContent className='flex items-center gap-x-4'>
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-            Sign Up
+          <SearchIcon/>
+        </NavbarItem>
+				<NavbarItem>
+          <Link className='text-secondary' href="#">Ru</Link>
+        </NavbarItem>
+        <NavbarItem className='rounded-lg border-solid border-2 border-[#BAFC00]' >
+          <Button as={Link} href="#" className='px-2 py-3 text-[#131314] text-sm'>
+            Подключить
           </Button>
         </NavbarItem>
       </NavbarContent>
