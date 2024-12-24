@@ -11,8 +11,8 @@
     @apply text-base font-medium text-[#131314CC] text-opacity-80 text-center leading-9;
   }
 
-  .text-default {
-    @apply flex items-center whitespace-nowrap px-6 justify-center bg-[#008ff4] text-white text-[1.6rem] font-extrabold h-[4.2rem] rounded-[0.6rem];
+  .text-disable {
+    @apply flex items-center text-center text-3xl text-[#13131466] text-opacity-40 leading-9;
   }
 
   /* .primary-button1 {

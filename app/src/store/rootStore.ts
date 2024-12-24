@@ -1,19 +1,19 @@
-import { makeAutoObservable } from 'mobx';
+import { makeAutoObservable } from 'mobx'
 
 export class RootStore {
-  counter = 0;
+  counter = 0
 
   constructor() {
-    makeAutoObservable(this);
+    makeAutoObservable(this)
   }
 
   increment() {
-    this.counter += 1;
+    this.counter += 1
   }
 
   decrement() {
-    this.counter -= 1;
+    this.counter -= 1
   }
 }
 
-export const rootStore = new RootStore();
+export const rootStore = new RootStore()
