@@ -8,7 +8,7 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = () => {
   return (
-    <Navbar className="my-12 w-full items-center justify-between px-24">
+    <Navbar className="my-12 w-full items-center justify-between">
       <NavbarBrand>
         <LogoIcon />
       </NavbarBrand>

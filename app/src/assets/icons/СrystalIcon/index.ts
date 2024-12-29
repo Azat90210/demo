@@ -1,3 +1,3 @@
-import CrystalIcon from './СrystalIcon.svg'
+import CrystalIcon from './СrystalIcon.svg?react'
 
 export { CrystalIcon }
