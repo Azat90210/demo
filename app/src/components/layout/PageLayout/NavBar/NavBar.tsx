@@ -6,44 +6,45 @@ interface HeaderProps {
   className?: string
 }
 
-
 export const Header: React.FC<HeaderProps> = () => {
   return (
-    <Navbar className='w-full justify-between items-center my-12 px-24'>
+    <Navbar className="my-12 w-full items-center justify-between px-24">
       <NavbarBrand>
         <LogoIcon />
       </NavbarBrand>
-      <NavbarContent className="hidden sm:flex gap-10" justify="center">
+      <NavbarContent className="hidden gap-10 sm:flex" justify="center">
         <NavbarItem>
-          <Link className='text-secondary' href="#">
-						Главная
+          <Link className="text-secondary" href="#">
+            Главная
           </Link>
         </NavbarItem>
-				<NavbarItem>
-          <Link className='text-secondary' href="#">
-						Продукты
+        <NavbarItem>
+          <Link className="text-secondary" href="#">
+            Продукты
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link  className='text-secondary' href="#">
-						Для бизнеса
+          <Link className="text-secondary" href="#">
+            Для бизнеса
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className='text-secondary' href="#">
-						Блог
+          <Link className="text-secondary" href="#">
+            Блог
           </Link>
         </NavbarItem>
       </NavbarContent>
-      <NavbarContent className='flex items-center gap-x-4'>
+      <NavbarContent className="flex items-center gap-x-4">
         <NavbarItem>
-          <SearchIcon/>
+          <SearchIcon />
         </NavbarItem>
-				<NavbarItem>
-          <Link className='text-secondary' href="#">Ru</Link>
+        <NavbarItem>
+          <Link className="text-secondary" href="#">
+            Ru
+          </Link>
         </NavbarItem>
-        <NavbarItem className='rounded-lg border-solid border-2 border-[#BAFC00]' >
-          <Button as={Link} href="#" className='px-2 py-3 text-[#131314] text-sm'>
+        <NavbarItem className="rounded-lg border-2 border-solid border-[#BAFC00]">
+          <Button as={Link} href="#" className="px-2 py-3 text-sm text-[#131314]">
             Подключить
           </Button>
         </NavbarItem>

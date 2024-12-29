@@ -1,12 +1,20 @@
 import { observer } from 'mobx-react-lite'
 import { PageLayout } from '@/components/layout/PageLayout'
-import twoScreenIcon from '@/assets/images/two-screen.png'
-import aboutMore1 from '@/assets/images/AboutMore1.png'
-import aboutMore2 from '@/assets/images/AboutMore2.png'
-import aboutMore3 from '@/assets/images/AboutMore3.png'
-import aboutMore4 from '@/assets/images/AboutMore4.png'
-import aboutMore5 from '@/assets/images/AboutMore5.png'
-import aboutMore6 from '@/assets/images/AboutMore6.png'
+import twoScreenIcon from '@/assets/images/mainPage/BusinessCard/two-screen.png'
+import aboutMore1 from '@/assets/images/mainPage/AboutMore/AboutMore1.png'
+import aboutMore2 from '@/assets/images/mainPage/AboutMore/AboutMore2.png'
+import aboutMore3 from '@/assets/images/mainPage/AboutMore/AboutMore3.png'
+import aboutMore4 from '@/assets/images/mainPage/AboutMore/AboutMore4.png'
+import aboutMore5 from '@/assets/images/mainPage/AboutMore/AboutMore5.png'
+import aboutMore6 from '@/assets/images/mainPage/AboutMore/AboutMore6.png'
+import { NewTechnologyCard } from './components/newTechnologyBlock/Card'
+import { PersonalLogoIcon } from '@/assets/icons/PersonalLogoIcon'
+import { ElectronicCollarForPetIcon } from '@/assets/icons/ElectronicCollarForPetIcon'
+import { DigitalCardsIcon } from '@/assets/icons/DigitalCardsIcon'
+import { ElectronicMenuForRestaurantsAndCafesIcon } from '@/assets/icons/ElectronicMenuForRestaurantsAndCafesIcon'
+import { CinemaAndTheatrePostersIcon } from '@/assets/icons/CinemaAndTheatrePostersIcon'
+import { ForCompaniesIcon } from '@/assets/icons/ForCompaniesIcon'
+import { StickerForPaymentIcon } from '@/assets/icons/StickerForPaymentIcon'
 
 const Home: React.FC = observer(() => {
   return (
@@ -17,7 +25,7 @@ const Home: React.FC = observer(() => {
           <h3 className="text-disable w-2/5 ">
             Digital визитки - будущее для цифрового бизнеса и ваших идей
           </h3>
-          <img src={twoScreenIcon} alt="" />
+          <img src={twoScreenIcon} alt="123" />
         </div>
         <div className="flex min-h-screen flex-col items-center gap-y-9">
           <h1 className="text-primary w-3/4 text-center text-6xl">
@@ -74,6 +82,68 @@ const Home: React.FC = observer(() => {
                 className="w-full max-w-[300px] rounded-lg"
               />
               <p className="text-secondary mt-10">Улучшайте визитку с помощью статистики</p>
+            </div>
+          </div>
+          <div className="flex flex-col gap-12">
+            <h1 className="text-primary mx-auto w-3/4 text-center text-6xl">
+              Новые технологии для удобной и простой работы с бизнесом
+            </h1>
+            <h3 className="text-disable mx-auto w-2/5 text-center text-2xl">
+              Виртуальный офис для вашей компании: корпоративная почта, календарь, облачное
+              хранилище, редактор документов и сервисы для коммуникации
+            </h3>
+            <div className="mx-24 grid auto-rows-auto grid-cols-3 gap-8">
+              {/* Первая строка */}
+              <NewTechnologyCard
+                iconSrc={PersonalLogoIcon}
+                title="Личная визитка"
+                description="Современное и удобное решение для обмена контактной информацией"
+              />
+              <NewTechnologyCard
+                iconSrc={ElectronicCollarForPetIcon}
+                title="Электронный ошейник для питомца"
+                description="Лучшее решение для быстрой идентификации и возврата потерявшегося животного"
+              />
+              <NewTechnologyCard
+                iconSrc={DigitalCardsIcon}
+                title="Цифровые открытки"
+                description="Инновационный способ отправлять поздравления, добавляя интерактивные элементы и мультимедиа."
+              />
+
+              {/* Вторая строка */}
+              <NewTechnologyCard
+                showBisnessBlock={true}
+                className="col-span-2 row-start-2"
+                iconSrc={ElectronicMenuForRestaurantsAndCafesIcon}
+                title="Электронное меню для ресторанов и кафе"
+                description="Удобное решение для ресторанов и кафе, позволяющее посетителям просматривать меню и делать заказы с помощью NFC и QR-кодов."
+              />
+              <NewTechnologyCard
+                showBisnessBlock={true}
+                className="col-span-1 row-start-2"
+                iconSrc={CinemaAndTheatrePostersIcon}
+                title="Афиши кино и театров"
+                description="Интерактивное решение для представления информации о мероприятиях, обеспечивающее мгновенный доступ и удобство взаимодействия."
+              />
+
+              {/* Третья строка */}
+              <NewTechnologyCard
+                showBisnessBlock={true}
+                iconSrc={ForCompaniesIcon}
+                title="Для компаний"
+                description="Эффективно передавайте данные о компании, её услугах и сотрудниках с помощью NFC и QR-кодов."
+              />
+              <NewTechnologyCard
+                iconSrc={StickerForPaymentIcon}
+                title="Стикер для оплаты"
+                description="Просто приложите смартфон к стикеру или отсканируйте QR-код для моментальной оплаты."
+              />
+              <NewTechnologyCard
+                showBisnessBlock={true}
+                iconSrc={DigitalCardsIcon}
+                title="Магазин-визитка"
+                description="Демонстрируйте товары и услуги компании, обновляйте информацию в реальном времени."
+              />
             </div>
           </div>
         </div>

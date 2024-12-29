@@ -1,4 +1,3 @@
-import SearchIcon from "./searchIcon.svg?react";
+import SearchIcon from './searchIcon.svg?react'
 
-
-export { SearchIcon };
+export { SearchIcon }
