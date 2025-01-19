@@ -2,10 +2,11 @@ import Cards from '@/assets/images/mainPage/BonusWithPlus/cards.png'
 import StarIcon from '@/assets/images/mainPage/BonusWithPlus/cardIcon.png'
 import { StatisticUpIcon } from '@/assets/icons/StatisticUpIcon'
 import { CardRedactionIcon } from '@/assets/icons/CardRedactIcon'
+import { DefaultBackGround } from '@/components/ui/DefaultBackGround'
 
 export const BonusWithPlusBlock: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-between rounded-[3.75rem] bg-[#F6F7F9] p-24 lg:flex-row lg:p-16">
+    <DefaultBackGround>
       <div className="relative flex flex-col items-center justify-center gap-y-8">
         <div className=" absolute left-0 top-[-5.5rem]">
           <img src={Cards} alt="Карточка" />
@@ -43,6 +44,6 @@ export const BonusWithPlusBlock: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </DefaultBackGround>
   )
 }

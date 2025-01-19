@@ -2,8 +2,9 @@ import { observer } from 'mobx-react-lite'
 import { PageLayout } from '@/components/layout/PageLayout'
 import { DigitalBusinessCardsBlock } from './components/DigitalBusinessCardsBlock'
 import { AboutMoreElectricBisinessCardsBlock } from './components/AboutMoreElectricBisinessCardsBlock'
-import { NewTechnologyBlock } from './components/NewTechnologyBlock'
 import { BonusWithPlusBlock } from './components/BonusWithPlusBlock'
+import { NewTechnologyBlock } from './components/NewTechnologyBlock'
+import { MobileUseBlock } from './components/MobileUseBlock'
 
 const Home: React.FC = observer(() => {
   return (
@@ -13,6 +14,7 @@ const Home: React.FC = observer(() => {
         <AboutMoreElectricBisinessCardsBlock />
         <NewTechnologyBlock />
         <BonusWithPlusBlock />
+        <MobileUseBlock />
       </div>
     </PageLayout>
   )
