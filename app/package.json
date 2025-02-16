@@ -11,8 +11,12 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@heroui/react": "^2.6.14",
+    "@heroui/system": "^2.4.7",
+    "@heroui/theme": "^2.4.6",
     "@nextui-org/react": "^2.6.8",
     "eslint-plugin-unused-imports": "^4.1.4",
+    "framer-motion": "^12.4.3",
     "mobx": "^6.13.5",
     "mobx-react-lite": "^4.1.0",
     "react": "^18.3.1",

@@ -1,26 +1,51 @@
-module.exports = {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
-  theme: {
-    extend: {fontFamily: {
-      sans: ['Suisse Intl', 'Arial', 'sans-serif'],
-      textColor: {
-        primary: "#8F8F8F",
-        secondary: "#8F8F8F",
+// tailwind.config.js
+import { heroui } from '@heroui/react'
 
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}', // Путь к вашим файлам с классами Tailwind
+  ],
+  plugins: [
+    heroui({
+      themes: {
+        'purple-dark': {
+          extend: 'dark', // <- inherit default values from dark theme
+          colors: {
+            background: '#0D001A',
+            foreground: '#ffffff',
+            primary: {
+              50: '#3B096C',
+              100: '#520F83',
+              200: '#7318A2',
+              300: '#9823C2',
+              400: '#c031e2',
+              500: '#DD62ED',
+              600: '#F182F6',
+              700: '#FCADF9',
+              800: '#FDD5F9',
+              900: '#FEECFE',
+              DEFAULT: '#DD62ED',
+              foreground: '#ffffff',
+            },
+            focus: '#F182F6',
+          },
+          layout: {
+            disabledOpacity: '0.3',
+            radius: {
+              small: '4px',
+              medium: '6px',
+              large: '8px',
+            },
+            borderWidth: {
+              small: '1px',
+              medium: '2px',
+              large: '3px',
+            },
+          },
+        },
       },
-      colors: {
-        background: "#181c20",
-        bottomMenuBackground: "#1c1c1c",
-        // must be a little bit brighter than background
-        modalBackground: "#343d46",
-        defaultNeutral: "#6c727a",
-      },
-       animation: {
-        "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
-        gradient: "gradient 8s linear infinite",
-      },
-      },
-    },
-  },
-  plugins: [],
+    }),
+  ],
 }
