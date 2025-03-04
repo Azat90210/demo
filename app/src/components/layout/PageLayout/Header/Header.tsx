@@ -14,22 +14,22 @@ export const Header: React.FC<HeaderProps> = () => {
       </NavbarBrand>
       <NavbarContent className="hidden gap-10 sm:flex" justify="center">
         <NavbarItem>
-          <Link className="text-secondary" href="#">
+          <Link underline="active" className="text-secondary font-medium" href="">
             Главная
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-secondary" href="#">
+          <Link underline="active" className="text-secondary font-medium" href="">
             Продукты
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link className="text-secondary" href="#">
+          <Link underline="active" className="text-secondary font-medium" href="">
             Для бизнеса
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-secondary" href="#">
+          <Link underline="active" className="text-secondary font-medium" href="">
             Блог
           </Link>
         </NavbarItem>
@@ -39,12 +39,16 @@ export const Header: React.FC<HeaderProps> = () => {
           <SearchIcon />
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-secondary" href="#">
+          <Link className="text-primary" href="#">
             Ru
           </Link>
         </NavbarItem>
-        <NavbarItem className="rounded-lg border-2 border-solid border-[#BAFC00]">
-          <Button as={Link} href="#" className="px-2 py-3 text-sm text-[#131314]">
+        <NavbarItem>
+          <Button
+            as={Link}
+            href="#"
+            className="rounded-lg border-2 text-primary font-medium text-sm font-sans items-center justify-center w-[109px] py-1 px-1.5 border-solid border-[#BAFC00]"
+          >
             Подключить
           </Button>
         </NavbarItem>

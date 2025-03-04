@@ -1,35 +1,37 @@
-// tailwind.config.js
-import { heroui } from '@heroui/react'
+const { heroui } = require('@heroui/react')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './index.html',
-    './src/**/*.{js,ts,jsx,tsx}', // Путь к вашим файлам с классами Tailwind
-  ],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Plus Jakarta Sans', 'sans-serif'],
+      },
+      colors: {
+        primary: '#131314',
+        secondary: '#131314CC',
+        default: '#13131466',
+      },
+      textColor: {
+        primary: '#131314',
+        secondary: '#131314CC',
+        default: '#13131466',
+      },
+    },
+  },
   plugins: [
     heroui({
       themes: {
-        'purple-dark': {
-          extend: 'dark', // <- inherit default values from dark theme
+        light: {
+          extend: 'light',
           colors: {
-            background: '#0D001A',
-            foreground: '#ffffff',
-            primary: {
-              50: '#3B096C',
-              100: '#520F83',
-              200: '#7318A2',
-              300: '#9823C2',
-              400: '#c031e2',
-              500: '#DD62ED',
-              600: '#F182F6',
-              700: '#FCADF9',
-              800: '#FDD5F9',
-              900: '#FEECFE',
-              DEFAULT: '#DD62ED',
-              foreground: '#ffffff',
-            },
-            focus: '#F182F6',
+            background: '#FFFFFF',
+            neutral: '#13131466',
+            foreground: '#131314',
+            primary: '#131314',
+            secondary: '#131314CC',
+            default: '#13131466',
           },
           layout: {
             disabledOpacity: '0.3',

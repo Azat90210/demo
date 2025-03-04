@@ -8,62 +8,68 @@ import aboutMore6 from '@/assets/images/mainPage/AboutMore/AboutMore6.png'
 export const AboutMoreElectricBisinessCardsBlock: React.FC = () => {
   return (
     <div className="flex min-h-screen flex-col items-center gap-y-9">
-      <h1 className="text-primary w-3/4 text-center text-6xl">
+      <h1 className="text-primary w-full font-sans text-center text-[65px] font-semibold">
         Узнайте больше об электронных визитках
       </h1>
-      <h3 className="text-disable w-1/2 text-2xl ">
+      <h3 className="text-neutral text-center font-medium font-sans w-1/2 text-[25px] ">
         Виртуальный офис для вас и вашей компании, точная статистика, редактор для визиток
       </h3>
-      <div className="mx-auto grid grid-cols-3 gap-x-6 gap-y-12 px-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="w-full grid grid-cols-3 gap-6">
+        {/* Верхний ряд */}
         <div className="flex flex-col items-center text-center">
           <img
             src={aboutMore1}
             alt="Создавайте визитки и делитесь ими"
-            className="w-full max-w-[300px] rounded-lg"
+            className="w-full aspect-[4/3] object-cover rounded-lg"
           />
-          <p className="text-secondary mt-10">Создавайте визитки и делитесь ими</p>
+          <p className="text-secondary mt-4">Создавайте визитки и делитесь ими</p>
         </div>
+
         <div className="flex flex-col items-center text-center">
           <img
             src={aboutMore2}
             alt="Создавайте свои уникальные NFC метки"
-            className="w-full max-w-[300px] rounded-lg"
+            className="w-full aspect-[4/3] object-cover rounded-lg"
           />
-          <p className="text-secondary mt-10">Создавайте свои уникальные NFC метки</p>
+          <p className="text-secondary mt-4">Создавайте свои уникальные NFC метки</p>
         </div>
+
         <div className="flex flex-col items-center text-center">
           <img
             src={aboutMore3}
             alt="Работайте в команде"
-            className="w-full max-w-[300px] rounded-lg"
+            className="w-full aspect-[4/3] object-cover rounded-lg"
           />
-          <p className="text-secondary mt-10">Работайте в команде</p>
+          <p className="text-secondary mt-4">Работайте в команде</p>
         </div>
-        <div className="flex flex-col items-center text-center">
+
+        <div className="flex flex-col items-center text-center md:col-span-2">
           <img
             src={aboutMore4}
             alt="Подключайте NFC метки к визиткам"
-            className="w-full max-w-[300px] rounded-lg"
+            className="w-full aspect-[16/9] object-cover rounded-lg"
           />
-          <p className="text-secondary mt-10">Подключайте NFC метки к визиткам</p>
+          <p className="text-secondary mt-4">Подключайте NFC метки к визиткам</p>
         </div>
+
         <div className="flex flex-col items-center text-center">
           <img
             src={aboutMore5}
             alt="Получайте достижения и приятные бонусы"
-            className="w-full max-w-[300px] rounded-lg"
+            className="w-full aspect-[4/3] object-cover rounded-lg"
           />
-          <p className="text-secondary mt-10">Получайте достижения и приятные бонусы</p>
+          <p className="text-secondary mt-4">Получайте достижения и приятные бонусы</p>
         </div>
+
         <div className="flex flex-col items-center text-center">
           <img
             src={aboutMore6}
             alt="Улучшайте визитку с помощью статистики"
-            className="w-full max-w-[300px] rounded-lg"
+            className="w-full aspect-[4/3] object-cover rounded-lg"
           />
-          <p className="text-secondary mt-10">Улучшайте визитку с помощью статистики</p>
+          <p className="text-secondary mt-4">Улучшайте визитку с помощью статистики</p>
         </div>
-      </div>{' '}
+      </div>
     </div>
   )
 }

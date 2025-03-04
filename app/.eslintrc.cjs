@@ -17,6 +17,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:prettier/recommended',
     'plugin:tailwindcss/recommended',
+    'plugin:@nextui-org/recommended',
   ],
   overrides: [
     {
@@ -46,6 +47,8 @@ module.exports = {
     'prettier/prettier': 'error',
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 0,
+    'tailwind/no-custom-classname': 'off',
+    '@nextui-org/react/no-custom-classname': 'off',
     'react/no-unescaped-entities': 0,
     '@typescript-eslint/no-non-null-asserted-optional-chain': 'off',
     'no-empty-pattern': 'off',

@@ -5,6 +5,7 @@ import { configure } from 'mobx'
 import { StoreProvider } from './store/StoreProvider'
 import './index.css'
 import App from './App'
+import { HeroUIProvider } from '@heroui/react'
 
 configure({
   enforceActions: 'never',
@@ -13,7 +14,11 @@ configure({
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <StoreProvider>
-      <App />
+      <HeroUIProvider>
+        <main className="bg-background ligth">
+          <App />
+        </main>
+      </HeroUIProvider>
     </StoreProvider>
   </StrictMode>
 )

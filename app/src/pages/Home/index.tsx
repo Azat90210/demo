@@ -3,8 +3,9 @@ import { PageLayout } from '@/components/layout/PageLayout'
 import { DigitalBusinessCardsBlock } from './components/DigitalBusinessCardsBlock'
 import { AboutMoreElectricBisinessCardsBlock } from './components/AboutMoreElectricBisinessCardsBlock'
 import { BonusWithPlusBlock } from './components/BonusWithPlusBlock'
-import { NewTechnologyBlock } from './components/NewTechnologyBlock'
 import { MobileUseBlock } from './components/MobileUseBlock'
+import { NewTechnologyBlock } from './components/newTechnologyBlock'
+import { AnswerAndQuastionsBlock } from './components/AnswerAndQuastionsBlock'
 
 const Home: React.FC = observer(() => {
   return (
@@ -15,6 +16,8 @@ const Home: React.FC = observer(() => {
         <NewTechnologyBlock />
         <BonusWithPlusBlock />
         <MobileUseBlock />
+
+        <AnswerAndQuastionsBlock />
       </div>
     </PageLayout>
   )
