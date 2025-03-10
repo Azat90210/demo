@@ -6,17 +6,18 @@ import { BonusWithPlusBlock } from './components/BonusWithPlusBlock'
 import { MobileUseBlock } from './components/MobileUseBlock'
 import { NewTechnologyBlock } from './components/newTechnologyBlock'
 import { AnswerAndQuastionsBlock } from './components/AnswerAndQuastionsBlock'
+import { FeedbackBar } from './components/FeedbackBar'
 
 const Home: React.FC = observer(() => {
   return (
     <PageLayout>
-      <div className="flex flex-col gap-y-28">
+      <div className="flex flex-col">
         <DigitalBusinessCardsBlock />
         <AboutMoreElectricBisinessCardsBlock />
         <NewTechnologyBlock />
         <BonusWithPlusBlock />
         <MobileUseBlock />
-
+        <FeedbackBar />
         <AnswerAndQuastionsBlock />
       </div>
     </PageLayout>
