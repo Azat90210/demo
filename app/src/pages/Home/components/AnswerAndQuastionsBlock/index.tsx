@@ -15,33 +15,35 @@ const QAData = [
 
 export const AnswerAndQuastionsBlock: React.FC = () => {
   return (
-    <div className="flex flex-col w-full lg:px-24 bg-[#f6f7f9] py-16">
-      <div className="flex flex-col items-center gap-16 justify-center">
-        <div className="flex flex-col gap-4 items-center">
-          <h1 className="text-primary text-[65px] font-medium text-center">Остались вопросы?</h1>
-          <p className="text-neutral font-medium text-2xl">
-            Здесь мы собрали несколько популярных вопросов и ответы на них
-          </p>
+    <div className="bg-[#f6f7f9] w-full">
+      <div className="flex flex-col w-full container py-16">
+        <div className="flex flex-col items-center gap-16 justify-center">
+          <div className="flex flex-col gap-4 items-center">
+            <h1 className="text-primary text-[65px] font-medium text-center">Остались вопросы?</h1>
+            <p className="text-neutral font-medium text-2xl">
+              Здесь мы собрали несколько популярных вопросов и ответы на них
+            </p>
+          </div>
+          <Accordion className="flex flex-col w-8/12">
+            {QAData.map((item) => (
+              <AccordionItem
+                key={item.key}
+                aria-label={item.question}
+                className="py-6 text-[#1A1A1A] font-medium text-[22px]"
+                indicator={({ isOpen }) => (
+                  <ArrowIcon
+                    className={`transition-transform duration-300 ${isOpen ? 'rotate-90' : ''}`}
+                  />
+                )}
+                title={
+                  <button className="w-full text-left outline-none ring-0">{item.question}</button>
+                }
+              >
+                <div className="pt-2 text-base text-gray-600">{defaultContent}</div>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
-        <Accordion className="flex flex-col w-8/12">
-          {QAData.map((item) => (
-            <AccordionItem
-              key={item.key}
-              aria-label={item.question}
-              className="py-6 text-[#1A1A1A] font-medium text-[22px]"
-              indicator={({ isOpen }) => (
-                <ArrowIcon
-                  className={`transition-transform duration-300 ${isOpen ? 'rotate-90' : ''}`}
-                />
-              )}
-              title={
-                <button className="w-full text-left outline-none ring-0">{item.question}</button>
-              }
-            >
-              <div className="pt-2 text-base text-gray-600">{defaultContent}</div>
-            </AccordionItem>
-          ))}
-        </Accordion>
       </div>
     </div>
   )

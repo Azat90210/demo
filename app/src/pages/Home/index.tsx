@@ -7,6 +7,7 @@ import { MobileUseBlock } from './components/MobileUseBlock'
 import { NewTechnologyBlock } from './components/newTechnologyBlock'
 import { AnswerAndQuastionsBlock } from './components/AnswerAndQuastionsBlock'
 import { FeedbackBar } from './components/FeedbackBar'
+import { UniqueCreationCardBlock } from './components/UniqueCreationCardBlock'
 
 const Home: React.FC = observer(() => {
   return (
@@ -16,6 +17,7 @@ const Home: React.FC = observer(() => {
         <AboutMoreElectricBisinessCardsBlock />
         <NewTechnologyBlock />
         <BonusWithPlusBlock />
+        <UniqueCreationCardBlock />
         <MobileUseBlock />
         <FeedbackBar />
         <AnswerAndQuastionsBlock />

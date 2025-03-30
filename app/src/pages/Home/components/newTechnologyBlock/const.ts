@@ -5,6 +5,7 @@ import { ElectronicMenuForRestaurantsAndCafesIcon } from '@/assets/icons/Electro
 import { ForCompaniesIcon } from '@/assets/icons/ForCompaniesIcon'
 import { PersonalLogoIcon } from '@/assets/icons/PersonalLogoIcon'
 import { StickerForPaymentIcon } from '@/assets/icons/StickerForPaymentIcon'
+import { BusinessCardStoreIcon } from '@/assets/icons/BusinessCardStoreIcon'
 
 export const NewTechnologyBlockData = [
   {
@@ -71,7 +72,7 @@ export const NewTechnologyBlockData = [
   {
     key: 7,
     className: 'col-span-2',
-    iconSrc: DigitalCardsIcon,
+    iconSrc: BusinessCardStoreIcon,
     title: 'Магазин-визитка',
     description:
       'Демонстрируйте товары и услуги компании, обновляйте информацию в реальном времени.',

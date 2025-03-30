@@ -29,8 +29,10 @@ export const NewTechnologyCard: React.FC<Props> = ({
             <span className="text-xs font-extrabold leading-3 text-white">БИЗНЕС</span>
           </div>
         )}
-        <h1 className="text-primary text-start text-4xl font-medium text-[#131314]">{title}</h1>
-        <h3 className="text-disable text-start text-lg font-normal">{description}</h3>
+        <h1 className="text-primary text-start font-medium text-[35px] leading-[40px] ">{title}</h1>
+        <h3 className="text-neutral text-start text-lg leading-[25px] font-normal">
+          {description}
+        </h3>
       </div>
     </div>
   )
