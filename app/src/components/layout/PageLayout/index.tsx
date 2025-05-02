@@ -7,10 +7,10 @@ interface PageLayoutProps {
 
 export const PageLayout: React.FC<PageLayoutProps> = ({ children }) => {
   return (
-    <div className=" flex min-h-screen flex-col bg-white">
+    <>
       <Header />
       {children}
       <Footer />
-    </div>
+    </>
   )
 }

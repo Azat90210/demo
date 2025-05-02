@@ -19,6 +19,29 @@ module.exports = {
         default: '#13131466',
       },
     },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '16px',
+        sm: '16px',
+        md: '16px',
+        lg: '16px',
+        xl: '16px',
+        '2xl': '16px',
+      },
+      screens: {
+        // Экран в дизайне 360px, ширина контейнера 320px
+        sm: '320px',
+        // Экран в дизайне 640px, ширина контейнера 600px
+        md: '600px',
+        // Экран в дизайне 1024px, ширина контейнера 980px
+        lg: '980px',
+        // Экран в дизайне 1440px, ширина контейнера 1261px
+        xl: '1261px',
+        // Для экранов больше 1536px
+        '2xl': '1536px',
+      },
+    },
   },
   plugins: [
     heroui({
@@ -28,7 +51,7 @@ module.exports = {
           colors: {
             background: '#FFFFFF',
             neutral: '#13131466',
-            foreground: '#131314',
+            foreground: '##BAFC00',
             primary: '#131314',
             secondary: '#131314CC',
             default: '#13131466',

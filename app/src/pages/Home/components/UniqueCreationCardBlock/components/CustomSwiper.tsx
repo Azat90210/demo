@@ -56,7 +56,7 @@ export const CustomSwiper: React.FC<CustomSwiperProps> = ({
             <Image
               src={skin.imageSrc}
               alt="skin"
-              className="size-[56px] rounded-full bg-slate-700"
+              className="size-[56px] rounded-full object-cover bg-slate-700"
               onClick={() => setSelectedSkin(skin)}
               role="button"
               tabIndex={0}

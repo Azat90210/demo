@@ -6,7 +6,7 @@ import { DefaultBackGround } from '@/components/ui/DefaultBackGround'
 
 export const BonusWithPlusBlock: React.FC = () => {
   return (
-    <DefaultBackGround>
+    <DefaultBackGround wrapperClassName="container">
       <div className="relative flex flex-col items-center justify-center gap-y-8">
         <div className=" absolute left-0 top-[-5.5rem]">
           <img src={Cards} alt="Карточка" />
